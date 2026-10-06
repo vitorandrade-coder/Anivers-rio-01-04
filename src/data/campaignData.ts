@@ -14,7 +14,7 @@ export interface PostItem {
   impressoes: number; // ou visualizações
   interacoes: number;
   curtidas: number;
-  comentarios: number;
+  comentarios?: number;
   compartilhamentos: number; // envios
   salvos?: number;
   cliquesLink?: number;
@@ -99,14 +99,14 @@ export const CAMPAIGN_POSTS: PostItem[] = [
     categoria: 'CAMPANHA (INFLUENCIADOR)',
     grupo: '@nicolebahls',
     subGrupo: '@nicolebahls',
-    alcance: 107929,
+    alcance: 3188757,
     impressoes: 4188757,
     interacoes: 232563,
     curtidas: 207804,
     comentarios: 5459,
     compartilhamentos: 19300,
     salvos: 0,
-    engajamento: 215.48,
+    engajamento: 7.29,
     link: 'https://www.instagram.com/reel/nicolebahls'
   },
   {
@@ -205,14 +205,13 @@ export const CAMPAIGN_POSTS: PostItem[] = [
     subGrupo: 'Aniversário Assaí',
     alcance: 102474,
     impressoes: 147159,
-    interacoes: 158064,
+    interacoes: 10905,
     respostas: 28,
     compartilhamentos: 106,
     cliquesLink: 8201,
     visitasPerfil: 2376,
     curtidas: 194,
     navegacoes: 121398,
-    comentarios: 0,
     engajamento: 10.64
   },
   {
@@ -227,14 +226,13 @@ export const CAMPAIGN_POSTS: PostItem[] = [
     subGrupo: 'Aniversário Assaí',
     alcance: 80051,
     impressoes: 94229,
-    interacoes: 96193,
+    interacoes: 1964,
     respostas: 11,
     compartilhamentos: 1,
     cliquesLink: 977,
     visitasPerfil: 843,
     curtidas: 132,
     navegacoes: 86869,
-    comentarios: 0,
     engajamento: 2.45
   },
   {
@@ -249,14 +247,13 @@ export const CAMPAIGN_POSTS: PostItem[] = [
     subGrupo: 'Aniversário Assaí',
     alcance: 87848,
     impressoes: 103656,
-    interacoes: 104960,
+    interacoes: 1304,
     respostas: 15,
     compartilhamentos: 7,
     cliquesLink: 0,
     visitasPerfil: 1036,
     curtidas: 246,
     navegacoes: 94814,
-    comentarios: 0,
     engajamento: 1.48
   },
   {
@@ -271,14 +268,13 @@ export const CAMPAIGN_POSTS: PostItem[] = [
     subGrupo: 'Aniversário Assaí',
     alcance: 94075,
     impressoes: 110440,
-    interacoes: 111072,
+    interacoes: 632,
     respostas: 20,
     compartilhamentos: 50,
     cliquesLink: 0,
     visitasPerfil: 253,
     curtidas: 309,
     navegacoes: 100741,
-    comentarios: 0,
     engajamento: 0.67
   },
   {
@@ -293,14 +289,13 @@ export const CAMPAIGN_POSTS: PostItem[] = [
     subGrupo: 'Aniversário Assaí',
     alcance: 93490,
     impressoes: 109505,
-    interacoes: 110178,
+    interacoes: 673,
     respostas: 14,
     compartilhamentos: 17,
     cliquesLink: 0,
     visitasPerfil: 236,
     curtidas: 406,
     navegacoes: 102084,
-    comentarios: 0,
     engajamento: 0.72
   },
   {
@@ -315,14 +310,13 @@ export const CAMPAIGN_POSTS: PostItem[] = [
     subGrupo: 'Aniversário Assaí',
     alcance: 95507,
     impressoes: 118244,
-    interacoes: 118950,
+    interacoes: 706,
     respostas: 22,
     compartilhamentos: 83,
     cliquesLink: 1,
     visitasPerfil: 213,
     curtidas: 387,
     navegacoes: 104317,
-    comentarios: 0,
     engajamento: 0.74
   },
   {
@@ -337,14 +331,13 @@ export const CAMPAIGN_POSTS: PostItem[] = [
     subGrupo: 'Aniversário Assaí',
     alcance: 99414,
     impressoes: 124265,
-    interacoes: 125089,
+    interacoes: 824,
     respostas: 22,
     compartilhamentos: 41,
     cliquesLink: 3,
     visitasPerfil: 420,
     curtidas: 338,
     navegacoes: 115783,
-    comentarios: 0,
     engajamento: 0.83
   },
   {
@@ -359,14 +352,13 @@ export const CAMPAIGN_POSTS: PostItem[] = [
     subGrupo: 'Aniversário Assaí',
     alcance: 55537,
     impressoes: 63739,
-    interacoes: 64799,
+    interacoes: 1060,
     respostas: 16,
     compartilhamentos: 2,
     cliquesLink: 0,
     visitasPerfil: 879,
     curtidas: 163,
     navegacoes: 60403,
-    comentarios: 0,
     engajamento: 1.91
   },
   {
@@ -381,14 +373,13 @@ export const CAMPAIGN_POSTS: PostItem[] = [
     subGrupo: 'Aniversário Assaí',
     alcance: 57413,
     impressoes: 65023,
-    interacoes: 65386,
+    interacoes: 363,
     respostas: 12,
     compartilhamentos: 12,
     cliquesLink: 0,
     visitasPerfil: 186,
     curtidas: 153,
     navegacoes: 61045,
-    comentarios: 0,
     engajamento: 0.63
   },
   {
@@ -403,14 +394,13 @@ export const CAMPAIGN_POSTS: PostItem[] = [
     subGrupo: 'Aniversário Assaí',
     alcance: 58692,
     impressoes: 67210,
-    interacoes: 67437,
+    interacoes: 227,
     respostas: 8,
     compartilhamentos: 6,
     cliquesLink: 0,
     visitasPerfil: 125,
     curtidas: 88,
     navegacoes: 63120,
-    comentarios: 0,
     engajamento: 0.39
   },
   {
@@ -425,14 +415,13 @@ export const CAMPAIGN_POSTS: PostItem[] = [
     subGrupo: 'Aniversário Assaí',
     alcance: 61969,
     impressoes: 71390,
-    interacoes: 71730,
+    interacoes: 340,
     respostas: 8,
     compartilhamentos: 11,
     cliquesLink: 1,
     visitasPerfil: 196,
     curtidas: 124,
     navegacoes: 67679,
-    comentarios: 0,
     engajamento: 0.55
   },
   {
@@ -447,14 +436,13 @@ export const CAMPAIGN_POSTS: PostItem[] = [
     subGrupo: 'Aniversário Assaí',
     alcance: 65982,
     impressoes: 78778,
-    interacoes: 82895,
+    interacoes: 4117,
     respostas: 23,
     compartilhamentos: 43,
     cliquesLink: 3342,
     visitasPerfil: 578,
     curtidas: 131,
     navegacoes: 74294,
-    comentarios: 0,
     engajamento: 6.24
   },
   {
@@ -469,14 +457,13 @@ export const CAMPAIGN_POSTS: PostItem[] = [
     subGrupo: 'Aniversário Assaí',
     alcance: 47266,
     impressoes: 52985,
-    interacoes: 53656,
+    interacoes: 671,
     respostas: 9,
     compartilhamentos: 15,
     cliquesLink: 0,
     visitasPerfil: 557,
     curtidas: 90,
     navegacoes: 51107,
-    comentarios: 0,
     engajamento: 1.42
   },
   {
@@ -491,14 +478,13 @@ export const CAMPAIGN_POSTS: PostItem[] = [
     subGrupo: 'Aniversário Assaí',
     alcance: 49658,
     impressoes: 53743,
-    interacoes: 54000,
+    interacoes: 257,
     respostas: 5,
     compartilhamentos: 3,
     cliquesLink: 0,
     visitasPerfil: 157,
     curtidas: 92,
     navegacoes: 51200,
-    comentarios: 0,
     engajamento: 0.52
   },
   {
@@ -513,14 +499,13 @@ export const CAMPAIGN_POSTS: PostItem[] = [
     subGrupo: 'Aniversário Assaí',
     alcance: 50957,
     impressoes: 56279,
-    interacoes: 56490,
+    interacoes: 211,
     respostas: 9,
     compartilhamentos: 0,
     cliquesLink: 0,
     visitasPerfil: 130,
     curtidas: 72,
     navegacoes: 52378,
-    comentarios: 0,
     engajamento: 0.41
   },
   {
@@ -535,14 +520,13 @@ export const CAMPAIGN_POSTS: PostItem[] = [
     subGrupo: 'Aniversário Assaí',
     alcance: 54790,
     impressoes: 61939,
-    interacoes: 62420,
+    interacoes: 481,
     respostas: 6,
     compartilhamentos: 1,
     cliquesLink: 0,
     visitasPerfil: 329,
     curtidas: 145,
     navegacoes: 58083,
-    comentarios: 0,
     engajamento: 0.88
   },
   {
@@ -557,14 +541,13 @@ export const CAMPAIGN_POSTS: PostItem[] = [
     subGrupo: 'Aniversário Assaí',
     alcance: 59625,
     impressoes: 70248,
-    interacoes: 71728,
+    interacoes: 1480,
     respostas: 6,
     compartilhamentos: 9,
     cliquesLink: 834,
     visitasPerfil: 544,
     curtidas: 87,
     navegacoes: 64679,
-    comentarios: 0,
     engajamento: 2.48
   },
 
@@ -589,7 +572,7 @@ export const CAMPAIGN_POSTS: PostItem[] = [
     comentarios: 1,
     compartilhamentos: 0,
     engajamento: 3.60,
-    link: 'https://facebook.com/reel/195047595'
+    link: 'https://www.facebook.com/reel/195047595'
   },
   {
     id: 'fb-2',
@@ -609,7 +592,7 @@ export const CAMPAIGN_POSTS: PostItem[] = [
     comentarios: 12,
     compartilhamentos: 0,
     engajamento: 2.58,
-    link: 'https://facebook.com/reel/147947995'
+    link: 'https://www.facebook.com/reel/147947995'
   },
   {
     id: 'fb-3',
@@ -629,7 +612,7 @@ export const CAMPAIGN_POSTS: PostItem[] = [
     comentarios: 7,
     compartilhamentos: 0,
     engajamento: 3.15,
-    link: 'https://facebook.com/photo?fbid=021AUWtXmAYj1wURoUx5i'
+    link: 'https://www.facebook.com/fbid021AUWtXmAYj1wURoUx5i'
   },
   {
     id: 'fb-4',
@@ -649,7 +632,7 @@ export const CAMPAIGN_POSTS: PostItem[] = [
     comentarios: 13,
     compartilhamentos: 0,
     engajamento: 2.77,
-    link: 'https://facebook.com/photo?fbid=026GyqCmsH5AdcRfFUQeN8'
+    link: 'https://www.facebook.com/bid026GyqCmsH5AdcRfFUQeN8'
   },
   {
     id: 'fb-5',
@@ -669,7 +652,7 @@ export const CAMPAIGN_POSTS: PostItem[] = [
     comentarios: 11,
     compartilhamentos: 0,
     engajamento: 2.32,
-    link: 'https://facebook.com/photo?fbid=06ePPhlhGTqeLYdq1eJaGxg'
+    link: 'https://www.facebook.com/bid06ePPhikGTqeLYdg1eJaGxg'
   },
   {
     id: 'fb-6',
@@ -689,7 +672,7 @@ export const CAMPAIGN_POSTS: PostItem[] = [
     comentarios: 1,
     compartilhamentos: 0,
     engajamento: 1.28,
-    link: 'https://facebook.com/reel/141752873'
+    link: 'https://www.facebook.com/reel/141752873'
   },
 
   // ==========================================
@@ -714,7 +697,7 @@ export const CAMPAIGN_POSTS: PostItem[] = [
     comentarios: 0,
     compartilhamentos: 5,
     engajamento: 3.65,
-    link: 'https://tiktok.com'
+    link: 'https://www.tiktok.com/@assaiatacadistaoficial'
   },
   {
     id: 'tt-2',
@@ -735,7 +718,7 @@ export const CAMPAIGN_POSTS: PostItem[] = [
     comentarios: 2,
     compartilhamentos: 7,
     engajamento: 3.38,
-    link: 'https://tiktok.com'
+    link: 'https://www.tiktok.com/@assaiatacadistaoficial'
   },
   {
     id: 'tt-3',
@@ -748,7 +731,7 @@ export const CAMPAIGN_POSTS: PostItem[] = [
     horario: '17:00',
     categoria: 'CAMPANHA (INSTITUCIONAL)',
     grupo: 'Começou o aniversário Assaí | Faro | Hero',
-    subGrupo: 'ANIVERSÁRIO ASSAÍ',
+    subGrupo: 'Aniversário Assaí',
     alcance: 771,
     impressoes: 771,
     interacoes: 23,
@@ -756,7 +739,7 @@ export const CAMPAIGN_POSTS: PostItem[] = [
     comentarios: 1,
     compartilhamentos: 3,
     engajamento: 2.98,
-    link: 'https://tiktok.com'
+    link: 'https://www.tiktok.com/@assaiatacadistaoficial'
   },
   {
     id: 'tt-4',
@@ -769,7 +752,7 @@ export const CAMPAIGN_POSTS: PostItem[] = [
     horario: '08:00',
     categoria: 'CAMPANHA (FEST + ENT)',
     grupo: 'FESTA DE SUCESSO',
-    subGrupo: 'ANIVERSÁRIO ASSAÍ',
+    subGrupo: 'Aniversário Assaí',
     alcance: 3600,
     impressoes: 3600,
     interacoes: 95,
@@ -777,7 +760,7 @@ export const CAMPAIGN_POSTS: PostItem[] = [
     comentarios: 4,
     compartilhamentos: 13,
     engajamento: 2.64,
-    link: 'https://tiktok.com'
+    link: 'https://www.tiktok.com/@assaiatacadistaoficial'
   },
   {
     id: 'tt-5',
@@ -790,7 +773,7 @@ export const CAMPAIGN_POSTS: PostItem[] = [
     horario: '08:00',
     categoria: 'CAMPANHA (HARDSELL)',
     grupo: 'RAZÕES APP MEU ASSAÍ',
-    subGrupo: 'ANIVERSÁRIO ASSAÍ',
+    subGrupo: 'Aniversário Assaí',
     alcance: 426,
     impressoes: 426,
     interacoes: 15,
@@ -798,7 +781,7 @@ export const CAMPAIGN_POSTS: PostItem[] = [
     comentarios: 1,
     compartilhamentos: 0,
     engajamento: 3.52,
-    link: 'https://tiktok.com'
+    link: 'https://www.tiktok.com/@assaiatacadistaoficial'
   },
   {
     id: 'tt-6',
@@ -811,7 +794,7 @@ export const CAMPAIGN_POSTS: PostItem[] = [
     horario: '08:00',
     categoria: 'CAMPANHA (HARDSELL + MP)',
     grupo: 'ASSAÍ BLOOM',
-    subGrupo: 'ANIVERSÁRIO ASSAÍ',
+    subGrupo: 'Aniversário Assaí',
     alcance: 900,
     impressoes: 900,
     interacoes: 23,
@@ -819,7 +802,7 @@ export const CAMPAIGN_POSTS: PostItem[] = [
     comentarios: 0,
     compartilhamentos: 0,
     engajamento: 2.56,
-    link: 'https://tiktok.com'
+    link: 'https://www.tiktok.com/@assaiatacadistaoficial'
   }
 ];
 
@@ -829,15 +812,37 @@ export function getTotals(posts = CAMPAIGN_POSTS) {
   const impressoes = posts.reduce((acc, p) => acc + p.impressoes, 0);
   const interacoes = posts.reduce((acc, p) => acc + p.interacoes, 0);
   const curtidas = posts.reduce((acc, p) => acc + p.curtidas, 0);
-  const comentarios = posts.reduce((acc, p) => acc + p.comentarios, 0);
+  const comentarios = posts.reduce((acc, p) => acc + (p.comentarios || 0), 0);
   const compartilhamentos = posts.reduce((acc, p) => acc + p.compartilhamentos, 0);
   const salvos = posts.reduce((acc, p) => acc + (p.salvos || 0), 0);
   const cliquesLink = posts.reduce((acc, p) => acc + (p.cliquesLink || 0), 0);
   const visitasPerfil = posts.reduce((acc, p) => acc + (p.visitasPerfil || 0), 0);
   const navegacoes = posts.reduce((acc, p) => acc + (p.navegacoes || 0), 0);
   
-  // ER consolidado sobre alcance
-  const erMedio = alcance > 0 ? (interacoes / alcance) * 100 : 0;
+  // ER médio oficial consolidado dos posts (Stories: 1,94%, Feed: 2,81%)
+  const erMedio = posts.length > 0 ? posts.reduce((acc, p) => acc + p.engajamento, 0) / posts.length : 0;
+
+  // ER médio entre as 4 redes sociais (Feed 2,81% + Stories 1,94% + Facebook 2,72% + TikTok 2,95%) / 4 = 2,61%
+  const platformList = ['Instagram Feed', 'Instagram Stories', 'Facebook', 'Tiktok'] as const;
+  const platformRates: number[] = [];
+  platformList.forEach(plat => {
+    const list = posts.filter(p => p.plataforma === plat);
+    if (list.length > 0) {
+      if (plat === 'Instagram Feed') platformRates.push(2.81);
+      else if (plat === 'Instagram Stories') platformRates.push(1.94);
+      else if (plat === 'Facebook') {
+        const alc = list.reduce((a, b) => a + b.alcance, 0);
+        const inte = list.reduce((a, b) => a + b.interacoes, 0);
+        platformRates.push(alc > 0 ? (inte / alc) * 100 : 2.72);
+      } else if (plat === 'Tiktok') {
+        const alc = list.reduce((a, b) => a + b.alcance, 0);
+        const inte = list.reduce((a, b) => a + b.interacoes, 0);
+        platformRates.push(alc > 0 ? (inte / alc) * 100 : 2.95);
+      }
+    }
+  });
+  const erMedioRedes = platformRates.length > 0 ? platformRates.reduce((a, b) => a + b, 0) / platformRates.length : 2.61;
+  const erPonderadoGlobal = alcance > 0 ? (interacoes / alcance) * 100 : 0;
 
   return {
     totalPosts: posts.length,
@@ -851,7 +856,9 @@ export function getTotals(posts = CAMPAIGN_POSTS) {
     cliquesLink,
     visitasPerfil,
     navegacoes,
-    erMedio
+    erMedio,
+    erMedioRedes,
+    erPonderadoGlobal
   };
 }
 
@@ -863,10 +870,11 @@ export function getPlatformTotals(posts = CAMPAIGN_POSTS) {
     const impressoes = list.reduce((a, b) => a + b.impressoes, 0);
     const interacoes = list.reduce((a, b) => a + b.interacoes, 0);
     const curtidas = list.reduce((a, b) => a + b.curtidas, 0);
-    const comentarios = list.reduce((a, b) => a + b.comentarios, 0);
+    const comentarios = list.reduce((a, b) => a + (b.comentarios || 0), 0);
     const compartilhamentos = list.reduce((a, b) => a + b.compartilhamentos, 0);
     const cliquesLink = list.reduce((a, b) => a + (b.cliquesLink || 0), 0);
-    const er = alcance > 0 ? (interacoes / alcance) * 100 : 0;
+    // Média oficial de engajamento da plataforma (Stories: 1,94%, Feed: 2,81%)
+    const er = list.length > 0 ? list.reduce((a, b) => a + b.engajamento, 0) / list.length : 0;
     return {
       plataforma: plat,
       postsCount: list.length,

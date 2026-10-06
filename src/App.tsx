@@ -432,7 +432,7 @@ export default function App() {
                 {/* Tag de Contexto */}
                 <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200">
                   <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-                  Base Oficial Atualizada: 37 Publicações (01 a 04/10/2026)
+                  Base Oficial Atualizada: 36 Publicações (01 a 04/10/2026)
                 </span>
               </div>
 
@@ -587,26 +587,26 @@ export default function App() {
           </div>
 
           {/* Card 3: ENGAJAMENTO MÉDIO (ER) */}
-          <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-5 hover:border-emerald-100 transition-all">
+          <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-5 hover:border-blue-100 transition-all">
             <div className="flex items-center justify-between">
               <span className="text-xs font-bold text-slate-500 tracking-wider uppercase">
                 ENGAJAMENTO MÉDIO (ER)
               </span>
-              <div className="w-9 h-9 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center shrink-0">
+              <div className="w-9 h-9 rounded-lg bg-blue-50 text-[#005599] flex items-center justify-center shrink-0">
                 <TrendingUp className="w-5 h-5" />
               </div>
             </div>
             <div className="mt-3 flex items-baseline justify-between">
               <span className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight tabular-nums">
-                {totals.erMedio.toFixed(2).replace('.', ',')}%
+                {totals.erMedioRedes.toFixed(2).replace('.', ',')}%
               </span>
-              <span className="inline-flex items-center text-xs font-bold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded">
+              <span className="inline-flex items-center text-xs font-bold text-blue-700 bg-blue-50 px-2 py-0.5 rounded">
                 <TrendingUp className="w-3.5 h-3.5 mr-0.5 inline" />
-                Alta retenção
+                Média das 4 Redes
               </span>
             </div>
             <p className="mt-1 text-xs text-slate-400">
-              Média ponderada sobre o alcance total ({formatNumber(totals.alcance)} contas)
+              Feed: 2,81% · Stories: 1,94% · TikTok: 2,95% · FB: 2,72% (Posts: {totals.erMedio.toFixed(2).replace('.', ',')}%)
             </p>
           </div>
         </section>
@@ -674,6 +674,183 @@ export default function App() {
           </div>
         </section>
 
+        {/* 3. ANÁLISE ESTRATÉGICA DE ALCANCE E ENGAJAMENTO */}
+        <section className="bg-white rounded-xl shadow-sm border border-gray-100 p-5 sm:p-6 space-y-5 print-break-inside-avoid">
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 border-b border-gray-100 pb-3">
+            <div>
+              <div className="flex items-center gap-2">
+                <div className="p-1.5 rounded-lg bg-[#EBF4FA] text-[#005599]">
+                  <TrendingUp className="w-4 h-4" />
+                </div>
+                <h2 className="text-base sm:text-lg font-bold text-[#005599] tracking-tight">
+                  Análise de Alcance e Engajamento
+                </h2>
+              </div>
+              <p className="text-xs text-slate-500 mt-1">
+                Recálculo oficial de distribuição de audiência e taxas médias de engajamento por canal
+              </p>
+            </div>
+            <div className="flex items-center gap-2 flex-wrap">
+              <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-bold bg-blue-50 text-[#005599] border border-blue-200">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#005599]"></span>
+                Feed: 2,81% ER Médio
+              </span>
+              <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-bold bg-purple-50 text-purple-700 border border-purple-200">
+                <span className="w-1.5 h-1.5 rounded-full bg-purple-600"></span>
+                Stories: 1,94% ER Médio
+              </span>
+            </div>
+          </div>
+
+          {/* Grid dos 4 Canais com Métricas e Análise */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {/* Instagram Feed */}
+            <div className="p-4 rounded-xl border border-blue-100 bg-gradient-to-b from-blue-50/40 to-white hover:border-blue-200 transition-all">
+              <div className="flex items-center justify-between">
+                <span className="text-xs font-bold text-[#005599] uppercase tracking-wider">Instagram Feed</span>
+                <span className="text-xs font-extrabold px-2 py-0.5 rounded bg-blue-100 text-blue-800">
+                  2,81% ER
+                </span>
+              </div>
+              <div className="mt-3 space-y-1.5 text-xs">
+                <div className="flex justify-between text-slate-600">
+                  <span>Alcance:</span>
+                  <strong className="text-slate-900 font-bold tabular-nums">3.608.231</strong>
+                </div>
+                <div className="flex justify-between text-slate-600">
+                  <span>Impactos:</span>
+                  <strong className="text-[#005599] font-bold tabular-nums">4.874.131</strong>
+                </div>
+                <div className="flex justify-between text-slate-600">
+                  <span>Interações:</span>
+                  <strong className="text-[#F47920] font-bold tabular-nums">242.818</strong>
+                </div>
+                <div className="flex justify-between text-slate-600">
+                  <span>Posts no Feed:</span>
+                  <strong className="text-slate-700 font-semibold">8 publicações</strong>
+                </div>
+              </div>
+              <div className="mt-3 pt-2.5 border-t border-blue-100/70 text-[11px] text-slate-600 leading-relaxed">
+                Maior entrega de impactos da campanha (75,8% do total). Alto engajamento com @nicolebahls (7,29% ER) e mecânica (8,42% ER).
+              </div>
+            </div>
+
+            {/* Instagram Stories */}
+            <div className="p-4 rounded-xl border border-purple-100 bg-gradient-to-b from-purple-50/40 to-white hover:border-purple-200 transition-all">
+              <div className="flex items-center justify-between">
+                <span className="text-xs font-bold text-purple-700 uppercase tracking-wider">Instagram Stories</span>
+                <span className="text-xs font-extrabold px-2 py-0.5 rounded bg-purple-100 text-purple-800">
+                  1,94% ER
+                </span>
+              </div>
+              <div className="mt-3 space-y-1.5 text-xs">
+                <div className="flex justify-between text-slate-600">
+                  <span>Alcance:</span>
+                  <strong className="text-slate-900 font-bold tabular-nums">1.214.748</strong>
+                </div>
+                <div className="flex justify-between text-slate-600">
+                  <span>Impactos:</span>
+                  <strong className="text-[#005599] font-bold tabular-nums">1.448.832</strong>
+                </div>
+                <div className="flex justify-between text-slate-600">
+                  <span>Interações:</span>
+                  <strong className="text-[#F47920] font-bold tabular-nums">26.215</strong>
+                </div>
+                <div className="flex justify-between text-slate-600">
+                  <span>Cliques Link:</span>
+                  <strong className="text-purple-700 font-bold tabular-nums">13.359</strong>
+                </div>
+              </div>
+              <div className="mt-3 pt-2.5 border-t border-purple-100/70 text-[11px] text-slate-600 leading-relaxed">
+                Forte alcance qualificado (1,21M contas) e alta conversão direta com 13.359 cliques no link de ofertas do Aniversário.
+              </div>
+            </div>
+
+            {/* Facebook */}
+            <div className="p-4 rounded-xl border border-sky-100 bg-gradient-to-b from-sky-50/30 to-white hover:border-sky-200 transition-all">
+              <div className="flex items-center justify-between">
+                <span className="text-xs font-bold text-sky-800 uppercase tracking-wider">Facebook</span>
+                <span className="text-xs font-extrabold px-2 py-0.5 rounded bg-sky-100 text-sky-800">
+                  2,72% ER
+                </span>
+              </div>
+              <div className="mt-3 space-y-1.5 text-xs">
+                <div className="flex justify-between text-slate-600">
+                  <span>Alcance:</span>
+                  <strong className="text-slate-900 font-bold tabular-nums">72.092</strong>
+                </div>
+                <div className="flex justify-between text-slate-600">
+                  <span>Impactos:</span>
+                  <strong className="text-[#005599] font-bold tabular-nums">102.854</strong>
+                </div>
+                <div className="flex justify-between text-slate-600">
+                  <span>Interações:</span>
+                  <strong className="text-[#F47920] font-bold tabular-nums">1.961</strong>
+                </div>
+                <div className="flex justify-between text-slate-600">
+                  <span>Publicações:</span>
+                  <strong className="text-slate-700 font-semibold">6 posts</strong>
+                </div>
+              </div>
+              <div className="mt-3 pt-2.5 border-t border-sky-100/70 text-[11px] text-slate-600 leading-relaxed">
+                Consistência em base institucional e ofertas com vídeos e carrosséis (média aritmética dos posts: 2,62%).
+              </div>
+            </div>
+
+            {/* TikTok */}
+            <div className="p-4 rounded-xl border border-gray-200 bg-gradient-to-b from-gray-50/50 to-white hover:border-gray-300 transition-all">
+              <div className="flex items-center justify-between">
+                <span className="text-xs font-bold text-slate-800 uppercase tracking-wider">TikTok</span>
+                <span className="text-xs font-extrabold px-2 py-0.5 rounded bg-slate-200 text-slate-800">
+                  2,95% ER
+                </span>
+              </div>
+              <div className="mt-3 space-y-1.5 text-xs">
+                <div className="flex justify-between text-slate-600">
+                  <span>Alcance:</span>
+                  <strong className="text-slate-900 font-bold tabular-nums">7.955</strong>
+                </div>
+                <div className="flex justify-between text-slate-600">
+                  <span>Impactos:</span>
+                  <strong className="text-[#005599] font-bold tabular-nums">7.955</strong>
+                </div>
+                <div className="flex justify-between text-slate-600">
+                  <span>Interações:</span>
+                  <strong className="text-[#F47920] font-bold tabular-nums">235</strong>
+                </div>
+                <div className="flex justify-between text-slate-600">
+                  <span>Vídeos:</span>
+                  <strong className="text-slate-700 font-semibold">6 curtos</strong>
+                </div>
+              </div>
+              <div className="mt-3 pt-2.5 border-t border-gray-200/70 text-[11px] text-slate-600 leading-relaxed">
+                Vídeos curtos de ofertas e ativações de aniversário com alta retenção orgânica (média dos vídeos: 3,12%).
+              </div>
+            </div>
+          </div>
+
+          {/* Resumo Geral da Análise */}
+          <div className="p-4 bg-slate-50 rounded-xl border border-gray-200/80 flex flex-col md:flex-row items-start md:items-center justify-between gap-3 text-xs">
+            <div className="flex items-center gap-3 flex-wrap">
+              <span className="font-bold text-slate-900">Total Consolidado da Campanha:</span>
+              <span className="text-slate-600">Alcance: <strong className="text-slate-900 font-bold">{formatNumber(totals.alcance)}</strong></span>
+              <span>·</span>
+              <span className="text-slate-600">Impactos: <strong className="text-[#005599] font-bold">{formatNumber(totals.impressoes)}</strong></span>
+              <span>·</span>
+              <span className="text-slate-600">Interações: <strong className="text-[#F47920] font-bold">{formatNumber(totals.interacoes)}</strong></span>
+            </div>
+            <div className="flex items-center gap-2 shrink-0">
+              <span className="text-slate-500 font-medium">Engajamento Médio de Todas as Redes:</span>
+              <span className="px-2.5 py-1 rounded font-extrabold bg-blue-50 text-blue-800 tabular-nums text-xs">
+                {totals.erMedioRedes.toFixed(2).replace('.', ',')}%
+              </span>
+              <span className="text-slate-400 text-[11px] font-normal">
+                (Média individual dos posts: {totals.erMedio.toFixed(2).replace('.', ',')}%)
+              </span>
+            </div>
+          </div>
+        </section>
+
         {/* 3. VISÃO CONSOLIDADA POR REDE SOCIAL (Tabela com Heatmap) */}
         <section className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden print-break-inside-avoid">
           <div className="px-5 sm:px-6 py-4 border-b border-gray-100 flex items-center justify-between">
@@ -718,12 +895,12 @@ export default function App() {
                       <span className="block text-[11px] text-[#005599] font-medium">8 Posts · Faro, Nicole Bahls, DiaTV, Ofertas</span>
                     </div>
                   </td>
-                  <td className="py-3.5 px-4 text-right tabular-nums text-slate-700 font-semibold">527.403</td>
+                  <td className="py-3.5 px-4 text-right tabular-nums text-slate-700 font-semibold">3.608.231</td>
                   <td className="py-3.5 px-4 text-right tabular-nums text-slate-900 font-bold">4.874.131</td>
                   <td className="py-3.5 px-4 text-right tabular-nums text-[#F47920] font-bold">242.818</td>
                   <td className="py-3.5 px-5 sm:px-6 text-right">
-                    <span className="inline-block px-2.5 py-1 rounded bg-emerald-100 text-emerald-800 font-bold tabular-nums">
-                      46,04%
+                    <span className="inline-block px-2.5 py-1 rounded bg-blue-50 text-blue-800 font-semibold tabular-nums">
+                      2,81%
                     </span>
                   </td>
                 </tr>
@@ -750,11 +927,11 @@ export default function App() {
                     </div>
                   </td>
                   <td className="py-3.5 px-4 text-right tabular-nums text-slate-700 font-semibold">1.214.748</td>
-                  <td className="py-3.5 px-4 text-right tabular-nums text-slate-900 font-bold">1.348.832</td>
-                  <td className="py-3.5 px-4 text-right tabular-nums text-[#F47920] font-bold">1.475.047</td>
+                  <td className="py-3.5 px-4 text-right tabular-nums text-slate-900 font-bold">1.448.832</td>
+                  <td className="py-3.5 px-4 text-right tabular-nums text-[#F47920] font-bold">26.215</td>
                   <td className="py-3.5 px-5 sm:px-6 text-right">
-                    <span className="inline-block px-2.5 py-1 rounded bg-emerald-100 text-emerald-800 font-bold tabular-nums">
-                      121,43%
+                    <span className="inline-block px-2.5 py-1 rounded bg-purple-50 text-purple-800 font-semibold tabular-nums">
+                      1,94%
                     </span>
                   </td>
                 </tr>
@@ -801,9 +978,9 @@ export default function App() {
                       <span className="block text-[11px] text-slate-500 font-normal">6 Vídeos Curtos de Ofertas e Festa</span>
                     </div>
                   </td>
-                  <td className="py-3.5 px-4 text-right tabular-nums text-slate-700">7.955</td>
-                  <td className="py-3.5 px-4 text-right tabular-nums text-slate-900 font-semibold">7.955</td>
-                  <td className="py-3.5 px-4 text-right tabular-nums text-[#F47920] font-semibold">235</td>
+                  <td className="py-3.5 px-4 text-right tabular-nums text-slate-700 font-semibold">7.955</td>
+                  <td className="py-3.5 px-4 text-right tabular-nums text-slate-900 font-bold">7.955</td>
+                  <td className="py-3.5 px-4 text-right tabular-nums text-[#F47920] font-bold">235</td>
                   <td className="py-3.5 px-5 sm:px-6 text-right">
                     <span className="inline-block px-2.5 py-1 rounded bg-blue-50 text-blue-800 font-semibold tabular-nums">
                       2,95%
@@ -814,11 +991,18 @@ export default function App() {
               {/* Linha Total Consolidada */}
               <tfoot>
                 <tr className="bg-gray-50 font-bold text-slate-900 border-t border-gray-200">
-                  <td className="py-3 px-5 sm:px-6 text-[#005599]">Total / Média Ponderada</td>
-                  <td className="py-3 px-4 text-right tabular-nums text-slate-800">1.822.198</td>
-                  <td className="py-3 px-4 text-right tabular-nums text-[#005599]">6.333.772</td>
-                  <td className="py-3 px-4 text-right tabular-nums text-[#F47920]">1.720.061</td>
-                  <td className="py-3 px-5 sm:px-6 text-right tabular-nums text-emerald-700">94,39%</td>
+                  <td className="py-3 px-5 sm:px-6 text-[#005599]">Total / Média das Redes</td>
+                  <td className="py-3 px-4 text-right tabular-nums text-slate-800">{formatNumber(totals.alcance)}</td>
+                  <td className="py-3 px-4 text-right tabular-nums text-[#005599]">{formatNumber(totals.impressoes)}</td>
+                  <td className="py-3 px-4 text-right tabular-nums text-[#F47920]">{formatNumber(totals.interacoes)}</td>
+                  <td className="py-3 px-5 sm:px-6 text-right">
+                    <span className="block tabular-nums font-bold text-slate-900">
+                      {totals.erMedioRedes.toFixed(2).replace('.', ',')}%
+                    </span>
+                    <span className="block text-[10px] text-slate-400 font-normal">
+                      (Média posts: {totals.erMedio.toFixed(2).replace('.', ',')}%)
+                    </span>
+                  </td>
                 </tr>
               </tfoot>
             </table>
@@ -874,12 +1058,12 @@ export default function App() {
                     <td className="py-2.5 px-4 flex items-center gap-2">
                       <span className="w-2.5 h-2.5 rounded-full bg-[#005599] shrink-0"></span>
                       <span className="font-semibold text-slate-900">Instagram Feed</span>
-                      <span className="text-xs text-[#005599] font-normal">(8 Posts · 4.1M Nicole Bahls)</span>
+                      <span className="text-xs text-[#005599] font-normal">(8 Posts · Nicole Bahls, Faro, Ofertas)</span>
                     </td>
-                    <td className="py-2.5 px-4 text-right tabular-nums text-slate-600">527.403</td>
+                    <td className="py-2.5 px-4 text-right tabular-nums text-slate-600 font-semibold">3.608.231</td>
                     <td className="py-2.5 px-4 text-right tabular-nums text-[#005599] font-bold">4.874.131</td>
                     <td className="py-2.5 px-4 text-right tabular-nums text-[#F47920] font-bold">242.818</td>
-                    <td className="py-2.5 px-4 text-right tabular-nums font-bold text-emerald-600 bg-emerald-50/60 rounded">46,04%</td>
+                    <td className="py-2.5 px-4 text-right tabular-nums font-semibold text-slate-800">2,81%</td>
                   </tr>
                   <tr className="hover:bg-purple-50/20 transition-colors">
                     <td className="py-2.5 px-4 flex items-center gap-2">
@@ -887,10 +1071,10 @@ export default function App() {
                       <span className="font-semibold text-slate-900">Instagram Stories</span>
                       <span className="text-xs text-purple-600 font-normal">(17 Stories · 13.359 cliques)</span>
                     </td>
-                    <td className="py-2.5 px-4 text-right tabular-nums text-slate-600">1.214.748</td>
-                    <td className="py-2.5 px-4 text-right tabular-nums text-[#005599] font-bold">1.348.832</td>
-                    <td className="py-2.5 px-4 text-right tabular-nums text-[#F47920] font-bold">1.475.047</td>
-                    <td className="py-2.5 px-4 text-right tabular-nums font-bold text-emerald-600 bg-emerald-50/60 rounded">121,43%</td>
+                    <td className="py-2.5 px-4 text-right tabular-nums text-slate-600 font-semibold">1.214.748</td>
+                    <td className="py-2.5 px-4 text-right tabular-nums text-[#005599] font-bold">1.448.832</td>
+                    <td className="py-2.5 px-4 text-right tabular-nums text-[#F47920] font-bold">26.215</td>
+                    <td className="py-2.5 px-4 text-right tabular-nums font-semibold text-slate-800">1,94%</td>
                   </tr>
                   <tr className="hover:bg-gray-50/40 transition-colors">
                     <td className="py-2.5 px-4 flex items-center gap-2">
@@ -898,8 +1082,8 @@ export default function App() {
                       <span className="font-semibold text-slate-900">Facebook</span>
                       <span className="text-xs text-slate-400 font-normal">(6 Publicações)</span>
                     </td>
-                    <td className="py-2.5 px-4 text-right tabular-nums text-slate-600">72.092</td>
-                    <td className="py-2.5 px-4 text-right tabular-nums text-slate-600">102.854</td>
+                    <td className="py-2.5 px-4 text-right tabular-nums text-slate-600 font-semibold">72.092</td>
+                    <td className="py-2.5 px-4 text-right tabular-nums text-slate-600 font-semibold">102.854</td>
                     <td className="py-2.5 px-4 text-right tabular-nums text-[#F47920] font-semibold">1.961</td>
                     <td className="py-2.5 px-4 text-right tabular-nums font-semibold text-slate-800">2,72%</td>
                   </tr>
@@ -909,12 +1093,23 @@ export default function App() {
                       <span className="font-semibold text-slate-900">TikTok</span>
                       <span className="text-xs text-slate-400 font-normal">(6 Vídeos Curtos)</span>
                     </td>
-                    <td className="py-2.5 px-4 text-right tabular-nums text-slate-600">7.955</td>
-                    <td className="py-2.5 px-4 text-right tabular-nums text-slate-600">7.955</td>
+                    <td className="py-2.5 px-4 text-right tabular-nums text-slate-600 font-semibold">7.955</td>
+                    <td className="py-2.5 px-4 text-right tabular-nums text-slate-600 font-semibold">7.955</td>
                     <td className="py-2.5 px-4 text-right tabular-nums text-[#F47920] font-semibold">235</td>
                     <td className="py-2.5 px-4 text-right tabular-nums font-semibold text-slate-800">2,95%</td>
                   </tr>
                 </tbody>
+                <tfoot>
+                  <tr className="bg-gray-50 font-bold text-slate-900 border-t border-gray-200">
+                    <td className="py-2.5 px-4 text-[#005599]">Total Consolidado / Média das Redes</td>
+                    <td className="py-2.5 px-4 text-right tabular-nums text-slate-800 font-semibold">{formatNumber(totals.alcance)}</td>
+                    <td className="py-2.5 px-4 text-right tabular-nums text-[#005599] font-bold">{formatNumber(totals.impressoes)}</td>
+                    <td className="py-2.5 px-4 text-right tabular-nums text-[#F47920] font-bold">{formatNumber(totals.interacoes)}</td>
+                    <td className="py-2.5 px-4 text-right tabular-nums font-bold text-slate-900">
+                      {totals.erMedioRedes.toFixed(2).replace('.', ',')}%
+                    </td>
+                  </tr>
+                </tfoot>
               </table>
             </div>
           </div>
@@ -967,7 +1162,7 @@ export default function App() {
               {/* Insight Box */}
               <div className="mt-3 p-3 bg-orange-50/70 border border-orange-100 rounded-lg text-xs text-slate-700 leading-relaxed">
                 <span className="font-bold text-[#F47920]">Insight de Eficiência:</span> 
-                O <strong>Instagram Feed</strong> gerou uma repercussão extraordinária com <strong>4.874.131 impactos</strong> e <strong>242.818 interações</strong>, impulsionado pelo Reels de influenciadora com a <strong>@nicolebahls</strong> (4,18M impressões, 207K curtidas e 215,48% de engajamento). O <strong>Instagram Stories</strong> demonstrou alto poder de conversão com <strong>13.359 cliques no link</strong> e mais de 1,34M de exibições, enquanto o <strong>Facebook</strong> e o <strong>TikTok</strong> mantiveram engajamentos consistentes de 2,72% e 2,95%.
+                O <strong>Instagram Feed</strong> gerou uma repercussão extraordinária com <strong>4.874.131 impactos</strong> e <strong>242.818 interações</strong>, sustentando taxa média de engajamento calibrada em <strong>2,81%</strong>, impulsionada pelo Reels da influenciadora <strong>@nicolebahls</strong> (4,18M impressões, 207K curtidas e 7,26% de ER) e pela mecânica de aniversário (8,42% de ER). O <strong>Instagram Stories</strong> demonstrou alto poder de cobertura com <strong>1.214.748 contas alcançadas</strong>, taxa média de engajamento oficial de <strong>1,94%</strong> e expressiva conversão direta de <strong>13.359 cliques no link</strong>. O <strong>Facebook</strong> e o <strong>TikTok</strong> mantiveram engajamentos consistentes de 2,72% e 2,95%.
               </div>
             </div>
           </div>
@@ -1159,16 +1354,16 @@ export default function App() {
             </div>
 
             <p className="text-xs text-slate-500">
-              37 publicações consolidadas cobrindo Instagram Feed, Instagram Stories, Facebook e TikTok (01/10 a 04/10/2026).
+              {totals.totalPosts} publicações consolidadas cobrindo Instagram Feed, Instagram Stories, Facebook e TikTok (01/10 a 04/10/2026).
             </p>
 
             <div className="bg-slate-900 text-slate-200 p-3 rounded-lg text-[11px] font-mono overflow-x-auto max-h-48 leading-relaxed">
               <div className="text-emerald-400 font-bold mb-1"># Resumo da Base Oficial:</div>
-              Total de Publicações: 37<br />
+              Total de Publicações: {totals.totalPosts}<br />
               Total de Impactos: {formatNumber(totals.impressoes)}<br />
               Total de Alcance: {formatNumber(totals.alcance)}<br />
               Total de Interações: {formatNumber(totals.interacoes)}<br />
-              Taxa de Engajamento Ponderada: {totals.erMedio.toFixed(2).replace('.', ',')}%
+              Taxa de Engajamento Média: {totals.erMedio.toFixed(2).replace('.', ',')}% (Feed: 2,81% · Stories: 1,94%)
             </div>
 
             <div className="pt-3 border-t border-gray-100 flex items-center justify-between">
@@ -1219,19 +1414,19 @@ export default function App() {
             <div className="space-y-3 text-xs text-slate-600 max-h-80 overflow-y-auto pr-1">
               <div>
                 <h4 className="font-bold text-slate-900 text-sm">Impactos (Impressões)</h4>
-                <p>Número total de vezes que as publicações e stories foram exibidos na tela dos usuários (6.333.772 impactos totais na campanha).</p>
+                <p>Número total de vezes que as publicações e stories foram exibidos na tela dos usuários ({formatNumber(totals.impressoes)} impactos totais na campanha).</p>
               </div>
               <div>
                 <h4 className="font-bold text-slate-900 text-sm">Alcance</h4>
-                <p>Quantidade de contas únicas alcançadas pelos posts (1.822.198 contas no total).</p>
+                <p>Quantidade de contas únicas alcançadas pelos posts ({formatNumber(totals.alcance)} contas no total).</p>
               </div>
               <div>
                 <h4 className="font-bold text-slate-900 text-sm">Interações</h4>
-                <p>Soma de curtidas (222.324), cliques no link (13.359), comentários (5.833), envios (20.151) e salvamentos (270), além de toques e ações nos stories, totalizando 1.720.061 ações.</p>
+                <p>Soma de curtidas ({formatNumber(totals.curtidas)}), cliques no link ({formatNumber(totals.cliquesLink)}), comentários ({formatNumber(totals.comentarios)}), envios ({formatNumber(totals.compartilhamentos)}) e salvamentos ({formatNumber(totals.salvos)}), totalizando {formatNumber(totals.interacoes)} ações registradas na campanha.</p>
               </div>
               <div>
                 <h4 className="font-bold text-slate-900 text-sm">ER Médio (Engagement Rate)</h4>
-                <p>Taxa percentual calculada sobre o Alcance: <code className="bg-gray-100 px-1 py-0.5 rounded font-mono text-slate-800">(Total de Interações / Total de Alcance) * 100</code>.</p>
+                <p>Taxa percentual média calculada para as 4 redes sociais: <strong>{totals.erMedioRedes.toFixed(2).replace('.', ',')}%</strong> (Instagram Feed: 2,81%, Instagram Stories: 1,94%, Facebook: 2,72% e TikTok: 2,95%). A média individual de todas as {totals.totalPosts} publicações da base é de <strong>{totals.erMedio.toFixed(2).replace('.', ',')}%</strong>, e a taxa global ponderada (interações / alcance) é de <strong>{totals.erPonderadoGlobal.toFixed(2).replace('.', ',')}%</strong>.</p>
               </div>
             </div>
 
